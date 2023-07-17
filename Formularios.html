@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario con Arreglos</title>
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .container {
+              max-width: 500px;
+              margin: 50px auto;
+            }
+            
+            #myForm .btn-primary {
+            display: block;
+            margin: 0 auto;
+            }
+
+            #nameList li {
+            display: flex;
+            justify-content: space-between;
+            }
+
+            #nameList li .btn-danger {
+            margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Agregar materiales</h1>
+            <hr>
+            <form id="myForm">
+            <div class="form-group">
+            <label for="name">Nombre del material:</label>
+            <input type="text" class="form-control" id="name" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+        <div id="result" style="margin-top: 20px;"></div>
+            <h3 class="text-center">Listado de materiales</h3>
+            <hr>
+            <ul id="nameList"></ul>
+        </div>
+
+        <script src="./Arreglos.js"></script>
+    </body>
+</html>

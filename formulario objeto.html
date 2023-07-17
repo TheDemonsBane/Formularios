@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pedidos con Objetos</title>
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .container {
+            max-width: 500px;
+             margin: 50px auto;
+            }
+
+         #myForm .btn-primary {
+            display: block;
+             margin: 0 auto;
+            }
+
+         #orderList li {
+             display: flex;
+             justify-content: space-between;
+         }
+
+            #orderList li .btn-danger {
+             margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+         <h2 class="text-center">Pedidos Fast</h2>
+         <p>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="order">Pedido:</label>
+                <input type="text" class="form-control" id="order" required>
+            </div>
+            <div class="form-group">
+                 <label for="product">Producto:</label>
+                <input type="text" class="form-control" id="product" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Cantidad:</label>
+                <input type="number" class="form-control" id="quantity" required>
+            </div>
+            <div class="form-group">
+             <label for="value">Valor:</label>
+                <input type="number" class="form-control" id="value" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Pedido</button>
+        </form>
+        <div id="result" style="margin-top: 20px;"></div>
+            <h3 class="text-center">Listado de Pedidos</h3>
+            <p>
+            <ul id="orderList"></ul>
+        </div>
+
+        <script src="./objetos.js"></script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
